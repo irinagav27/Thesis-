@@ -1,0 +1,13 @@
+﻿Strategy,Dimension_Group,Subdimension,N,Mean,SD,Median,Min,Max
+Lexical,Voice,voice_preservation,699,3.77,0.57,4.0,3.0,5.0
+Lexical,Meaning,meaning_preservation,699,4.38,0.48,4.0,4.0,5.0
+Lexical,Accessibility,accessibility,699,4.57,0.5,5.0,4.0,5.0
+Persona1,Voice,voice_preservation,699,3.12,0.37,3.0,2.0,4.0
+Persona1,Meaning,meaning_preservation,699,4.05,0.22,4.0,4.0,5.0
+Persona1,Accessibility,accessibility,699,4.99,0.12,5.0,4.0,5.0
+Persona2,Voice,voice_preservation,699,3.95,0.23,4.0,3.0,5.0
+Persona2,Meaning,meaning_preservation,699,4.63,0.48,5.0,4.0,5.0
+Persona2,Accessibility,accessibility,699,4.61,0.49,5.0,4.0,5.0
+Persona3,Voice,voice_preservation,699,3.43,0.5,3.0,3.0,4.0
+Persona3,Meaning,meaning_preservation,699,4.15,0.36,4.0,4.0,5.0
+Persona3,Accessibility,accessibility,699,4.98,0.15,5.0,4.0,5.0

@@ -1,0 +1,5 @@
+﻿Strategy,N,Voice_M,Voice_SD,Voice_Mdn,Accuracy_M,Accuracy_SD,Accuracy_Mdn,Accessibility_M,Accessibility_SD,Accessibility_Mdn
+Lexical,696,20.05,0.56,20.0,20.0,0.07,20.0,3.94,0.9,4.0
+Persona1,699,20.0,0.39,20.0,19.98,0.19,20.0,4.3,0.62,4.0
+Persona2,698,20.01,0.12,20.0,20.0,0.0,20.0,4.01,0.86,4.0
+Persona3,699,20.0,0.11,20.0,20.0,0.04,20.0,4.51,0.71,5.0

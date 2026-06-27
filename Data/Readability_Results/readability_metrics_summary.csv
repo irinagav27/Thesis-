@@ -1,0 +1,6 @@
+Text Type,FK Grade,FK Interpretation,SMOG Index,SMOG Interpretation,Avg Sent Len,Avg Word Len
+Original,12.30,Very difficult (academic),13.64,Academic level,21.95,5.03
+Lexical,11.14,Very difficult (academic),12.22,Academic level,22.14,4.78
+Persona1,7.75,Very difficult (academic),9.87,High school level,16.05,4.52
+Persona2,11.05,Very difficult (academic),13.03,Academic level,18.68,5.01
+Persona3,9.09,Very difficult (academic),10.98,High school level,18.13,4.65

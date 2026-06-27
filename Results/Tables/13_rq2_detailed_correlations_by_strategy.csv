@@ -1,0 +1,49 @@
+﻿strategy,judge_dimension,judge_label,metric,pearson_r,p_value,n
+lexical,voice_total,Voice Preservation,Hedging,-0.04057576043124837,0.28404001726577927,699
+lexical,voice_total,Voice Preservation,Attribution,0.01630520041020555,0.6669455132312362,699
+lexical,voice_total,Voice Preservation,Art Terms,0.13749539868614488,0.0002663426562030873,699
+lexical,voice_total,Voice Preservation,Semantic Similarity,0.22364621806523483,2.2562248261257103e-09,699
+lexical,voice_total,Voice Preservation,Entity Preservation,0.0666718763267236,0.09017311620734957,647
+lexical,voice_total,Voice Preservation,BERTScore F1,0.5801513281421429,4.0713244116975675e-64,699
+lexical,accuracy_total,Meaning Preservation,Hedging,-0.01281215932371444,0.7352552097882432,699
+lexical,accuracy_total,Meaning Preservation,Attribution,0.007995476844154366,0.8328760974393878,699
+lexical,accuracy_total,Meaning Preservation,Art Terms,0.22919015469493517,8.765420758164008e-10,699
+lexical,accuracy_total,Meaning Preservation,Semantic Similarity,0.18532066104434178,8.070754859422224e-07,699
+lexical,accuracy_total,Meaning Preservation,Entity Preservation,0.006894949345972031,0.8610448894025539,647
+lexical,accuracy_total,Meaning Preservation,BERTScore F1,0.497968528988441,4.451665086015276e-45,699
+persona1,voice_total,Voice Preservation,Hedging,-0.12979696572619376,0.0005815597347507209,699
+persona1,voice_total,Voice Preservation,Attribution,0.008574580109924193,0.8209693512164017,699
+persona1,voice_total,Voice Preservation,Art Terms,0.09179277118548565,0.015196721519044179,699
+persona1,voice_total,Voice Preservation,Semantic Similarity,0.07590505735636074,0.04484267843588589,699
+persona1,voice_total,Voice Preservation,Entity Preservation,0.008693148739034004,0.8253282040048345,647
+persona1,voice_total,Voice Preservation,BERTScore F1,0.314859709966872,1.4969679006350876e-17,699
+persona1,accuracy_total,Meaning Preservation,Hedging,-0.040164723639206354,0.2889504810865406,699
+persona1,accuracy_total,Meaning Preservation,Attribution,-0.025219921720339586,0.5056078929644314,699
+persona1,accuracy_total,Meaning Preservation,Art Terms,0.09889221929594019,0.008888608012679251,699
+persona1,accuracy_total,Meaning Preservation,Semantic Similarity,0.03727321062882613,0.3251007326916946,699
+persona1,accuracy_total,Meaning Preservation,Entity Preservation,0.03914363234116894,0.3201640867079136,647
+persona1,accuracy_total,Meaning Preservation,BERTScore F1,0.16858010675576382,7.423979594550104e-06,699
+persona2,voice_total,Voice Preservation,Hedging,-0.09918874142441331,0.008685463323988046,699
+persona2,voice_total,Voice Preservation,Attribution,0.02519463886119113,0.5060347696671851,699
+persona2,voice_total,Voice Preservation,Art Terms,0.050025905264267534,0.1864762257981611,699
+persona2,voice_total,Voice Preservation,Semantic Similarity,0.13662691207764563,0.0002914741068518927,699
+persona2,voice_total,Voice Preservation,Entity Preservation,0.07476806957236139,0.05732837286764367,647
+persona2,voice_total,Voice Preservation,BERTScore F1,0.13748246489951643,0.00026670157523514163,699
+persona2,accuracy_total,Meaning Preservation,Hedging,-0.09408644850376952,0.01282525460529901,699
+persona2,accuracy_total,Meaning Preservation,Attribution,-0.017470707329482676,0.6447199072451819,699
+persona2,accuracy_total,Meaning Preservation,Art Terms,0.03317531759558751,0.38114937296095375,699
+persona2,accuracy_total,Meaning Preservation,Semantic Similarity,-0.12439850084249598,0.0009812535034597275,699
+persona2,accuracy_total,Meaning Preservation,Entity Preservation,-0.014184403292171167,0.7187591302019783,647
+persona2,accuracy_total,Meaning Preservation,BERTScore F1,-0.12794765548165432,0.0006972736204715581,699
+persona3,voice_total,Voice Preservation,Hedging,-0.11834201800587715,0.0017231247727680032,699
+persona3,voice_total,Voice Preservation,Attribution,-0.009298059242075926,0.8061520858432828,699
+persona3,voice_total,Voice Preservation,Art Terms,0.08721894579252773,0.021098526570687726,699
+persona3,voice_total,Voice Preservation,Semantic Similarity,-0.03872001759402398,0.3066604282104589,699
+persona3,voice_total,Voice Preservation,Entity Preservation,0.05453659080185627,0.1658836958955767,647
+persona3,voice_total,Voice Preservation,BERTScore F1,0.2435170858373723,6.790752272606261e-11,699
+persona3,accuracy_total,Meaning Preservation,Hedging,-0.15416162526945748,4.257978334612505e-05,699
+persona3,accuracy_total,Meaning Preservation,Attribution,0.04409509374712206,0.24430539576702093,699
+persona3,accuracy_total,Meaning Preservation,Art Terms,0.07937095089354014,0.03590404159142357,699
+persona3,accuracy_total,Meaning Preservation,Semantic Similarity,-0.14936650814756985,7.363201161718156e-05,699
+persona3,accuracy_total,Meaning Preservation,Entity Preservation,0.046140324125437476,0.2412014589887231,647
+persona3,accuracy_total,Meaning Preservation,BERTScore F1,0.08940746526184197,0.01806345323337309,699

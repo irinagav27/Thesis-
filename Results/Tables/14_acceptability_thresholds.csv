@@ -1,0 +1,5 @@
+Strategy,Voice >=70%,Meaning >=85%,Accessibility >=40%,Meets All
+Lexical,+,+,+,+
+Persona1,-,-,+,-
+Persona2,+,+,+,+
+Persona3,-,-,+,-

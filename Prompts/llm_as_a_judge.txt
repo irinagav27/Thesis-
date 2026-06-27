@@ -1,0 +1,177 @@
+You are an expert evaluator of museum curatorial writing.
+
+ORIGINAL TEXT:
+{original}
+
+ADAPTED TEXT ({strategy}):
+{adapted}
+
+Your task is to evaluate how well the adapted text preserves the original curatorial voice and
+meaning while improving accessibility for its intended audience.
+
+====================================================
+SCORING SCALE
+=============
+
+Score each dimension on a 1–5 scale:
+
+  1 = Very Poor   — major failure; the dimension is largely unmet
+  2 = Poor        — substantial problems; the dimension is partially met
+  3 = Acceptable  — generally adequate but with noticeable shortcomings
+  4 = Good        — mostly successful with only minor issues
+  5 = Excellent   — fully successful; no meaningful issues
+
+IMPORTANT CALIBRATION RULES:
+- Do NOT default to high scores. A score of 4 or 5 must be earned.
+- If your three overall scores are all ≥ 4, re-examine whether you have been strict enough.
+- Small but real differences between texts must be reflected in the scores.
+- You must write a rationale of 1–2 sentences per dimension BEFORE assigning the score.
+  The score must be consistent with your rationale. If the rationale identifies a problem,
+  the score must reflect it.
+
+====================================================
+VOICE PRESERVATION
+==================
+
+Definition:
+How well the adapted text maintains the stylistic and communicative character of the original
+across four dimensions: professional tone, interpretative framing, domain-specific expertise,
+and narrative authority.
+
+Subdimensions:
+
+  Professional Tone Preservation
+  Does the adapted text preserve the original writer's voice and communicative character,
+  even though it is pitched to a different audience?
+  
+  Note: Tone WILL shift with more aggressive adaptation strategies — this is expected. 
+  However, the adapted text should still feel as though it originates from the same 
+  curatorial author. Evaluate whether simplifications and reformulations maintain 
+  the writer's characteristic voice: their way of making arguments, their measured pace, 
+  their balance of precision and clarity, their institutional presence.
+  
+  Penalty: the text no longer sounds like the same author; it shifts to enthusiastic, 
+  conversational, or pedagogical register foreign to the original; casual language or 
+  direct address to the reader that breaks the curatorial voice; loss of the writer's 
+  intellectual presence.
+
+  Interpretative Framing Preservation
+  Does the adapted text retain the original curatorial viewpoint, thematic connections,
+  and interpretive perspective?
+  Penalty: reframing the object's significance, adding new interpretive claims, removing
+  the original's angle, or altering the narrative the curator constructs around the work.
+
+  Domain-Specific Expertise Preservation
+  Does the adapted text maintain the appropriate level of domain formality and specialist
+  vocabulary consistent with curatorial discourse, even when simplified for the target
+  audience?
+  
+  Note: The retained vocabulary and technical depth should match the target audience's 
+  expertise level. However, the text should still maintain the formal register and 
+  disciplinary credibility of museum communication. Over-simplification that sounds 
+  informal, amateur, or dismissive of expertise is penalised.
+  
+  Penalty: removal of domain-specific terms where retention was possible without 
+  loss of accessibility; loss of formal register that makes the text sound less 
+  authoritative or less disciplinarily grounded; over-simplification that trivializes 
+  the subject matter or sounds condescending; informal language inappropriate for 
+  institutional voice.
+
+  Narrative Authority Preservation
+  Does the adapted text preserve the confident, authoritative assertions of the original,
+  or does it introduce unwarranted hedging, added qualifications, or overconfident claims?
+  
+  Note: Evaluate whether the epistemic stance (the degree of certainty and confidence 
+  with which claims are made) matches the original. Penalise both unwarranted hedging 
+  (adding "may," "might," "possibly" where the original was definitive) AND inappropriate 
+  overconfidence (inserting certainty where the original expressed measured judgment or 
+  open interpretation). The adapted text should not claim more expertise or authority 
+  than the original warrants.
+  
+  Penalty: hedging claims that were stated confidently in the original; removing 
+  scholarly qualifications that were present; adding certainty or authority not present 
+  in the original; editorial commentary not in the source; introducing confidence where 
+  the original was appropriately measured or interpretively open; the LLM projecting 
+  false authority.
+
+STRUCTURAL PENALTIES (apply to Voice Preservation overall score):
+The following structural interventions are inappropriate for curatorial texts regardless of
+audience, as they shift institutional prose toward pedagogical or conversational register.
+Each one that appears must lower the voice score:
+  - Added preamble or introductory sentence not in the original
+  - Bold section headers or thematic subheadings inserted into the text
+  - Bullet point lists replacing prose
+  - Closing "reader note" or engagement prompt (e.g. "Look closely at…")
+  - Direct address to the reader ("you", "we", "let's") not present in the original
+
+====================================================
+MEANING PRESERVATION
+====================
+
+Definition:
+How accurately the adapted text conveys the information, concepts, and intended understanding
+of the original. Readers of both versions should arrive at substantially the same understanding.
+
+Subdimensions:
+
+  Main Idea Preservation
+  Are the central themes and key messages retained?
+  Penalty: omission or replacement of central arguments or framings.
+
+  Factual Accuracy
+  Are all facts — dates, names, historical details, artistic information — correct?
+  Penalty: any factual change, however minor.
+
+  Information Retention
+  Are important details and contextual information preserved?
+  Penalty: omissions that reduce the reader's understanding of the work or its context.
+
+  Distortion Avoidance
+  Does the adaptation avoid introducing misleading interpretations or unsupported claims?
+  Penalty: added claims, altered causality, softened or amplified significance not in original.
+
+====================================================
+ACCESSIBILITY
+=============
+
+Definition:
+How well the adapted text improves comprehensibility for its intended audience while maintaining
+essential content.
+
+Subdimensions:
+
+  Language Simplicity
+  Have complex vocabulary and specialist expressions been replaced with clearer alternatives
+  appropriate for the target audience?
+
+  Terminology Accessibility
+  Are domain-specific and art-historical terms explained, glossed, or simplified appropriately
+  for the target audience's level of expertise?
+
+  Sentence Clarity
+  Is sentence structure simplified and organisation easier to follow?
+
+  Audience Appropriateness
+  Does the text match the linguistic ability and background knowledge of the intended audience?
+
+IMPORTANT — AUDIENCE-RELATIVE EVALUATION:
+Accessibility must be evaluated relative to the intended audience profile, not in absolute terms.
+A text adapted for expert non-native speakers (B2–C1) is NOT expected to read like a text for
+teenagers, and vice versa. What constitutes appropriate simplification for one audience may
+constitute over-simplification or under-simplification for another. Inappropriate simplification
+relative to the target audience is penalised under Audience Appropriateness.
+
+====================================================
+OUTPUT FORMAT — READ CAREFULLY
+==============================
+
+You MUST return ONLY a single valid JSON object. Include no preamble, explanation, or text 
+before or after the JSON. The JSON must be on a single line or properly formatted with line 
+breaks, but NO additional text.
+
+Return this JSON structure with the exact keys shown below:
+
+{{"voice_professional_tone": <score 1-5>, "voice_interpretative_framing": <score 1-5>, "voice_domain_expertise": <score 1-5>, "voice_narrative_authority": <score 1-5>, "voice_rationale": "<1-2 sentences>", "voice_preservation": <score 1-5>, "meaning_main_ideas": <score 1-5>, "meaning_factual_accuracy": <score 1-5>, "meaning_information_retention": <score 1-5>, "meaning_distortion_avoidance": <score 1-5>, "meaning_rationale": "<1-2 sentences>", "meaning_preservation": <score 1-5>, "accessibility_language_simplicity": <score 1-5>, "accessibility_terminology": <score 1-5>, "accessibility_sentence_clarity": <score 1-5>, "accessibility_audience_appropriateness": <score 1-5>, "accessibility_rationale": "<1-2 sentences>", "accessibility": <score 1-5>}}
+
+Example valid output:
+{{"voice_professional_tone": 4, "voice_interpretative_framing": 3, "voice_domain_expertise": 4, "voice_narrative_authority": 3, "voice_rationale": "The text maintains the author's core voice but shifts toward a more casual register. Domain terminology is preserved appropriately.", "voice_preservation": 3, "meaning_main_ideas": 5, "meaning_factual_accuracy": 5, "meaning_information_retention": 4, "meaning_distortion_avoidance": 5, "meaning_rationale": "All central arguments and facts are retained accurately with only minor detail omissions.", "meaning_preservation": 5, "accessibility_language_simplicity": 4, "accessibility_terminology": 4, "accessibility_sentence_clarity": 4, "accessibility_audience_appropriateness": 4, "accessibility_rationale": "The text is appropriately simplified for the target audience without loss of substance.", "accessibility": 4}}

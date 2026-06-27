@@ -1,0 +1,87 @@
+                            Human Evaluation Guidelines
+1. Purpose of this Evaluation
+
+The purpose of this evaluation step is in assessing the quality of AI-adapted texts in comparison to
+the original texts.
+Evaluators will compare an original texts with its adapted version and assess the adaptations on 
+the following three dimensions:
+    1. Voice Preservation
+    2. Meaning Preservation
+    3. Accessability
+Each dimension will be scored on a scale of 1 to 5
+
+2. Evaluation Procedure
+For each evaluated text:
+    1. First, read the original text carefully
+    2. Read the adapted version
+    3. Compare the two texts
+    4. Assign a score to each evaluation dimension
+    5. Provide a short comment explaining the scores
+
+3. Scoring scale
+The following scale will be used for all scores:
+Score     |    Description
+==========================
+1         | Very Poor
+2         | Poor
+3         | Acceptable
+4         | Good
+5         | Excellent
+
+4. Definitions used for Evaluation
+4.1 Voice Preservation
+- Definition: Voice preservation measures how well the adapted text maintains the style, tone,
+and perspective of the original curatorial text
+- What to consider for the voice dimension:
+    1. Is the tone similar?
+    2. Is the interpretative perspective maintained?
+    3. Does the text still sound professional?
+    4. Has the authors intent been preserved?
+4.2 Meaning Preservation
+- Definition: Meaning preservation measures how much of the original context is present
+in the adapted version
+- What to consider for the meaning dimension:
+    1. Are the main ideas preserved?
+    2. Are the important facts retained?
+    3. Has any information been added or removed?
+    4. Are there any distorisions?
+4.3 Accessability
+- Definition: Accessability measures how easy the adapted texts are for each of 
+the different strategies
+- What to consider for the accessability dimension:
+    1. Is the language easier to understand?
+    2. Are difficult terms explained or simplified?
+    3. Is the sentence structure clear?
+    4. Would the target audience understand the text more easily?
+
+5. Comment Guidelines
+For the comment section of this evaluation I have used Excel formulas, that based on the average 
+of the 3 dimnesions give me a comment.
+The formulas used are the following:
+5.1 Lexical simplification:
+=IF(D2+E2+F2>=13,
+"Excellent: preserves voice, meaning, and accessibility well.",
+IF(D2+E2+F2>=10,
+"Good: generally strong, minor issues in one dimension.",
+IF(D2+E2+F2>=7,
+"Moderate: some degradation in "
+& IF(D2<3,"voice ","")
+& IF(E2<3,"meaning ","")
+& IF(F2<3,"accessibility ","")
+& ".",
+"Poor: major degradation across multiple dimensions.")))
+5.2 Persona 1:
+=IF(D682+E682+F682>=13,"Excellent adaptation for an 8th-grade audience. The text preserves voice and meaning while remaining highly accessible.",
+IF(D682+E682+F682>=10,"Good adaptation. Most information and voice are preserved, with only minor accessibility issues.",
+IF(D682+E682+F682>=7,"Moderate adaptation. Some information, voice, or readability could be improved for the target audience.",
+"Poor adaptation. Significant improvements are needed in preserving meaning, voice, and accessibility.")))
+5.3 Persona 2:
+=IF(D698+E698+F698>=13,"Excellent adaptation for Persona 2. The text preserves voice and meaning while remaining highly accessible.",
+IF(D698+E698+F698>=10,"Good adaptation. Most information and voice are preserved, with only minor accessibility issues.",
+IF(D698+E698+F698>=7,"Moderate adaptation. Some information, voice, or readability could be improved for the target audience.",
+"Poor adaptation. Significant improvements are needed in preserving meaning, voice, and accessibility.")))
+5.4 Persona 3:
+=IF(D698+E698+F698>=13,"Excellent adaptation for Persona 3. The text preserves voice and meaning while remaining highly accessible.",
+IF(D698+E698+F698>=10,"Good adaptation. Most information and voice are preserved, with only minor accessibility issues.",
+IF(D698+E698+F698>=7,"Moderate adaptation. Some information, voice, or readability could be improved for the target audience.",
+"Poor adaptation. Significant improvements are needed in preserving meaning, voice, and accessibility.")))

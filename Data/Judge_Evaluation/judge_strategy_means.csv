@@ -1,0 +1,5 @@
+﻿strategy,voice_professional_tone,voice_interpretative_framing,voice_domain_expertise,voice_narrative_authority,voice_preservation,meaning_main_ideas,meaning_factual_accuracy,meaning_information_retention,meaning_distortion_avoidance,meaning_preservation,accessibility_language_simplicity,accessibility_terminology,accessibility_sentence_clarity,accessibility_audience_appropriateness,accessibility
+lexical,3.7625,4.5293,3.8326,3.9113,3.7697,5.0,5.0,4.3333,5.0,4.3763,4.6109,4.0858,4.6109,4.568,4.5694
+persona1,3.1144,4.0959,3.1574,3.7454,3.1202,4.9957,5.0,4.0472,4.9971,4.0501,4.9914,4.0916,4.9914,4.9857,4.9857
+persona2,3.9514,4.7539,3.9828,3.9828,3.9528,5.0,5.0,4.598,5.0,4.6323,4.6066,4.1488,4.628,4.6366,4.6137
+persona3,3.4349,4.2217,3.4893,3.9142,3.4349,5.0,5.0,4.1402,5.0,4.1531,4.9814,4.1416,4.9828,4.9828,4.9785

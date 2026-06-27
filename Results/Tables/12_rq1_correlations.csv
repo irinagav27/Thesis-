@@ -1,0 +1,7 @@
+﻿Metric,Judge Dimension,Avg Correlation,Strong (r>0.6),Good (r>0.5)
+Hedging Density,Voice Preservation,-0.09697587139693314,No,No
+Attribution Markers,Voice Preservation,0.010194090034811237,No,No
+Art Term Density,Voice Preservation,0.09163325523210644,No,No
+Semantic Similarity,Meaning Preservation,-0.012792784329224469,No,No
+BERTScore F1,Meaning Preservation,0.15700211138109813,No,No
+Entity Preservation,Meaning Preservation,0.019498625630101817,No,No

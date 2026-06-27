@@ -1,0 +1,397 @@
+"""
+Judge strategy counts:
+strategy
+persona2    699
+persona1    699
+lexical     699
+persona3    699
+Name: count, dtype: int64
+
+Voice preservation score distribution:
+voice_preservation
+3     133
+4    2601
+5      62
+Name: count, dtype: int64
+
+Meaning preservation score distribution:
+meaning_preservation
+4      78
+5    2718
+Name: count, dtype: int64
+
+Merging computational metric files...
+Metric rows: 699
+
+Checking required columns...
+
+
+Correlating computational metrics with judge scores...
+
+
+----------------------------------------------------------------------
+Hedging Density ↔ Voice Preservation
+----------------------------------------------------------------------
+
+DEBUG LEXICAL - Hedging Density
+  Metric column: lexical_adapted_hedging
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 120
+  Judge unique values: 3
+  First rows:
+ lexical_adapted_hedging  voice_preservation
+                     0.0                   4
+                     0.0                   4
+                     0.0                   4
+                     0.0                   4
+                     0.0                   4
+  lexical: r=-0.048, p=0.2020
+
+DEBUG PERSONA1 - Hedging Density
+  Metric column: persona1_adapted_hedging
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 136
+  Judge unique values: 2
+  First rows:
+ persona1_adapted_hedging  voice_preservation
+                 0.980392                   3
+                 0.000000                   4
+                 0.000000                   4
+                 0.000000                   4
+                 0.000000                   4
+  persona1: r=-0.027, p=0.4791
+
+DEBUG PERSONA2 - Hedging Density
+  Metric column: persona2_adapted_hedging
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 152
+  Judge unique values: 2
+  First rows:
+ persona2_adapted_hedging  voice_preservation
+                 0.934579                   4
+                 0.000000                   4
+                 0.000000                   4
+                 0.000000                   4
+                 0.000000                   4
+  persona2: r=-0.018, p=0.6347
+
+DEBUG PERSONA3 - Hedging Density
+  Metric column: persona3_adapted_hedging
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 142
+  Judge unique values: 2
+  First rows:
+ persona3_adapted_hedging  voice_preservation
+                 1.030928                   4
+                 0.000000                   4
+                 0.000000                   4
+                 0.000000                   4
+                 0.000000                   4
+  persona3: r=-0.006, p=0.8667
+
+Average: r=-0.025
+
+----------------------------------------------------------------------
+Attribution Markers ↔ Voice Preservation
+----------------------------------------------------------------------
+
+DEBUG LEXICAL - Attribution Markers
+  Metric column: lexical_adapted_attribution
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 10
+  Judge unique values: 3
+  First rows:
+ lexical_adapted_attribution  voice_preservation
+                         0.0                   4
+                         0.0                   4
+                         0.0                   4
+                         0.0                   4
+                         0.0                   4
+  lexical: r=-0.021, p=0.5713
+
+DEBUG PERSONA1 - Attribution Markers
+  Metric column: persona1_adapted_attribution
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 8
+  Judge unique values: 2
+  First rows:
+ persona1_adapted_attribution  voice_preservation
+                          0.0                   3
+                          0.0                   4
+                          0.0                   4
+                          0.0                   4
+                          0.0                   4
+  persona1: r=0.039, p=0.3070
+
+DEBUG PERSONA2 - Attribution Markers
+  Metric column: persona2_adapted_attribution
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 13
+  Judge unique values: 2
+  First rows:
+ persona2_adapted_attribution  voice_preservation
+                          0.0                   4
+                          0.0                   4
+                          0.0                   4
+                          0.0                   4
+                          0.0                   4
+  persona2: r=-0.005, p=0.9050
+
+DEBUG PERSONA3 - Attribution Markers
+  Metric column: persona3_adapted_attribution
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 9
+  Judge unique values: 2
+  First rows:
+ persona3_adapted_attribution  voice_preservation
+                          0.0                   4
+                          0.0                   4
+                          0.0                   4
+                          0.0                   4
+                          0.0                   4
+  persona3: r=0.019, p=0.6198
+
+Average: r=0.008
+
+----------------------------------------------------------------------
+Art Term Density ↔ Voice Preservation
+----------------------------------------------------------------------
+
+DEBUG LEXICAL - Art Term Density
+  Metric column: lexical_adapted_art_terms
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 218
+  Judge unique values: 3
+  First rows:
+ lexical_adapted_art_terms  voice_preservation
+                  1.041667                   4
+                  0.000000                   4
+                  0.000000                   4
+                  1.265823                   4
+                  4.878049                   4
+  lexical: r=0.060, p=0.1110
+
+DEBUG PERSONA1 - Art Term Density
+  Metric column: persona1_adapted_art_terms
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 195
+  Judge unique values: 2
+  First rows:
+ persona1_adapted_art_terms  voice_preservation
+                   0.000000                   3
+                   0.000000                   4
+                   0.000000                   4
+                   1.265823                   4
+                   0.000000                   4
+  persona1: r=-0.031, p=0.4158
+
+DEBUG PERSONA2 - Art Term Density
+  Metric column: persona2_adapted_art_terms
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 277
+  Judge unique values: 2
+  First rows:
+ persona2_adapted_art_terms  voice_preservation
+                   0.000000                   4
+                   1.666667                   4
+                   0.000000                   4
+                   1.136364                   4
+                   5.263158                   4
+  persona2: r=0.140, p=0.0002
+
+DEBUG PERSONA3 - Art Term Density
+  Metric column: persona3_adapted_art_terms
+  Judge column: voice_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 212
+  Judge unique values: 2
+  First rows:
+ persona3_adapted_art_terms  voice_preservation
+                   0.000000                   4
+                   0.000000                   4
+                   0.000000                   4
+                   1.250000                   4
+                   1.923077                   4
+  persona3: r=-0.008, p=0.8422
+
+Average: r=0.041
+
+----------------------------------------------------------------------
+Semantic Similarity ↔ Meaning Preservation
+----------------------------------------------------------------------
+
+DEBUG LEXICAL - Semantic Similarity
+  Metric column: lexical_adapted_semantic_sim
+  Judge column: meaning_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 685
+  Judge unique values: 2
+  First rows:
+ lexical_adapted_semantic_sim  meaning_preservation
+                     0.944592                     5
+                     0.971057                     5
+                     0.984421                     5
+                     0.939819                     5
+                     0.991555                     5
+  lexical: r=0.102, p=0.0071
+
+DEBUG PERSONA1 - Semantic Similarity
+  Metric column: persona1_adapted_semantic_sim
+  Judge column: meaning_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 699
+  Judge unique values: 2
+  First rows:
+ persona1_adapted_semantic_sim  meaning_preservation
+                      0.868677                     5
+                      0.856735                     5
+                      0.892884                     5
+                      0.891387                     5
+                      0.866246                     5
+  persona1: r=0.157, p=0.0000
+
+DEBUG PERSONA2 - Semantic Similarity
+  Metric column: persona2_adapted_semantic_sim
+  Judge column: meaning_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 699
+  Judge unique values: 1
+  First rows:
+ persona2_adapted_semantic_sim  meaning_preservation
+                      0.948758                     5
+                      0.967460                     5
+                      0.961178                     5
+                      0.973166                     5
+                      0.990382                     5
+  persona2: Judge score has no variation
+
+DEBUG PERSONA3 - Semantic Similarity
+  Metric column: persona3_adapted_semantic_sim
+  Judge column: meaning_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 699
+  Judge unique values: 2
+  First rows:
+ persona3_adapted_semantic_sim  meaning_preservation
+                      0.922369                     5
+                      0.941068                     5
+                      0.922495                     5
+                      0.906443                     5
+                      0.887286                     5
+  persona3: r=0.134, p=0.0004
+
+Average: r=0.131
+
+----------------------------------------------------------------------
+BERTScore F1 ↔ Meaning Preservation
+----------------------------------------------------------------------
+
+DEBUG LEXICAL - BERTScore F1
+  Metric column: lexical_adapted_bertscore_f1
+  Judge column: meaning_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 685
+  Judge unique values: 2
+  First rows:
+ lexical_adapted_bertscore_f1  meaning_preservation
+                     0.985263                     5
+                     0.981050                     5
+                     0.983808                     5
+                     0.980506                     5
+                     0.991935                     5
+  lexical: r=0.204, p=0.0000
+
+DEBUG PERSONA1 - BERTScore F1
+  Metric column: persona1_adapted_bertscore_f1
+  Judge column: meaning_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 699
+  Judge unique values: 2
+  First rows:
+ persona1_adapted_bertscore_f1  meaning_preservation
+                      0.912572                     5
+                      0.906669                     5
+                      0.911003                     5
+                      0.928727                     5
+                      0.923561                     5
+  persona1: r=0.186, p=0.0000
+
+DEBUG PERSONA2 - BERTScore F1
+  Metric column: persona2_adapted_bertscore_f1
+  Judge column: meaning_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 699
+  Judge unique values: 1
+  First rows:
+ persona2_adapted_bertscore_f1  meaning_preservation
+                      0.951176                     5
+                      0.959182                     5
+                      0.946160                     5
+                      0.950800                     5
+                      0.974057                     5
+  persona2: Judge score has no variation
+
+DEBUG PERSONA3 - BERTScore F1
+  Metric column: persona3_adapted_bertscore_f1
+  Judge column: meaning_preservation
+  Rows after merge/dropna: 699
+  Metric unique values: 698
+  Judge unique values: 2
+  First rows:
+ persona3_adapted_bertscore_f1  meaning_preservation
+                      0.950678                     5
+                      0.940698                     5
+                      0.919564                     5
+                      0.931858                     5
+                      0.921459                     5
+  persona3: r=0.137, p=0.0003
+
+Average: r=0.176
+
+======================================================================
+BEST METRICS IDENTIFIED:
+======================================================================
+
+BERTScore F1 → Meaning Preservation
+  Avg Correlation: 0.176
+  Weak or limited alignment
+
+Semantic Similarity → Meaning Preservation
+  Avg Correlation: 0.131
+  Weak or limited alignment
+
+Art Term Density → Voice Preservation
+  Avg Correlation: 0.041
+  Weak or limited alignment
+
+Attribution Markers → Voice Preservation
+  Avg Correlation: 0.008
+  Weak or limited alignment
+
+Hedging Density → Voice Preservation
+  Avg Correlation: -0.025
+  Weak or limited alignment
+
+Creating correlation heatmap...
+Figure saved: Results/Figures/12_rq1_correlation_heatmap.png
+
+======================================================================
+RQ1 ANALYSIS COMPLETE
+======================================================================
+Results saved to: Results/Tables/12_rq1_correlations.csv
+Heatmap values saved to: Results/Tables/12_rq1_heatmap_values.csv
+Visualization saved to: Results/Figures/12_rq1_correlation_heatmap.png
+======================================================================
+(deepseek) PS C:\Users\PC\OneDrive\Desktop\Thesis> 
+"""

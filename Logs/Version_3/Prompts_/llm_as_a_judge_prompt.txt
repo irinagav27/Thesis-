@@ -1,0 +1,141 @@
+Role:
+You are an expert evaluator of museum curatorial text, with deep knowledge of historical context, institutional communication, and a scholarly voice.
+Task:
+Assess how well the adapted text preserves the curatorial voice and semantic content of the original, while improving accessibility
+Part A:
+Evaluate the following dimensions using a 5-point scale: 
+1. Severely compromised
+2. Noticeably weakened
+3. Moderately preserved
+4. Largely preserved
+5. Very preserved
+For each dimension:
+Provide a numerical score (on the scale of 1 to 5)
+Give a few examples that are evidence of the chosen score, the number of examples what the be under 5
+Write a 5-sentence analysis 
+Dimension 1: Epistemic stance and scholarly authority:
+Definition: The epistemic stance represents the writer's attitude, certainty, or belief towards the knowledge they are sharing. The epistemic stance defined how they position themselves in relation to a specific piece of information. The scholarly authority represents the legitimate power and is trusted to be assigned to a specific person or source based on their expertise.
+Key indicators: 
+Hedging language (such as modal verbs, adverbs of frequency, and probability phrases)
+Attribution language (such as neutral verbs)
+Interpretative vs declarative statements
+Degrees of certainty 
+Score: ___/ 5
+Evidence:
+(quote the examples)
+Analysis:
+(quote the examples)
+Dimension 2: Domain Expertise and Jargon Language
+Definition: Appropriate use and preservation of the art-world vocabulary, which signals the curatorial expertise
+Key indicators: 
+Art history words retention
+Technical vocabulary appropriateness
+Precision of the language choice
+Specialist credibility maintenance
+Score: ___/ 5
+Evidence:
+(quote the examples)
+Analysis:
+(quote the examples)
+Dimension 3: Interpretative Framing and the Analytical Depth
+Definition: The preservation of the curator’s interpretative guidance and the insights of the curator.
+Key indicators: 
+Interpretative verbs (such as “reveals”, “illustrates”, “ underscores”, “implies”, “demonstrates”)
+Score: ___/ 5
+Evidence:
+(quote the examples)
+Analysis:
+(quote the examples)
+Dimension 4: The Tone and Professional Register
+Definition: This entails the maintenance of the formal, scholarly, appropriate museum communication.
+Key indicators: 
+The level of formality in the language
+Professional vs academic language
+The consistency of the institutional voice
+Appropriate distance and objectivity
+Score: ___/ 5
+Evidence:
+(quote the examples)
+Analysis:
+(quote the examples)
+Dimension 5: The Narrative Structure
+Definition: The narrative structure entails the preservation of the argumentation flow and rhetorical devices
+Key indicators: 
+Argumentative coherence and development
+Use of complex syntax
+Rhetorical devices
+Score: ___/ 5
+Evidence:
+(quote the examples)
+Analysis:
+(quote the examples)
+Overall voice preservation:
+Total Voice preservation ___/ 25 (total amount of questions)
+Percentage: __% (out of 100)
+Summary (up to 5 sentences)
+Part B: Semantic Accuracy and Content Preservation
+Dimension 6: Factual Accuracy
+Are all the facts preserved correctly
+Facts to check for: artist name, painting name, date, historical facts
+Score: __/5
+Facultative errors (give up to 5 examples)
+Analysis (up to 5 sentences)
+Dimension 7: Completeness of Information
+How much of the original information is retained
+Estimated percentage: __/ 100%
+Score: __/5
+Major deletion (give up to 5 examples)
+Analysis (up to 5 sentences)
+Dimension 8: The Preservation of the Meaning
+Is the curator’s message maintained?
+Facts to check for: main theme, interpretative claims, contextual relationships, insights
+Score: __/5
+Meaning Distortions (give up to 5 examples)
+Analysis (up to 5 sentences)
+Dimension 9: The Fidelity of the Content and the Amount of Hallucinations
+Have any new facts been introduced?
+Score: __/5
+Additions (give up to 5 examples)
+Analysis (up to 5 sentences)
+Overall Semantic Accuracy:
+Total Semantic Accuracy ___/ 20 (total number of questions)
+Percentage: __% (out of 100) 
+Summary (up to 5 sentences)
+Evaluation Task 2: Comparative Ranking → statistical analysis not prompting
+After evaluating all the versions from above
+Prompt:
+Comparative Ranking:
+Task 1: Rank all 4 adaptations:
+Curatorial Voice Adaptations:
+Lexical: ___ | Persona 1: ___ | Persona 2: ___ | Persona 3: ___ 
+Justification (up to 5 sentences)
+Semantic and Factual Accuracy:
+Lexical: ___ | Persona 1: ___ | Persona 2: ___ | Persona 3: ___ 
+Justification (up to 5 sentences)
+Accessibility and Improvement: 
+Lexical: ___ | Persona 1: ___ | Persona 2: ___ | Persona 3: ___ 
+Justification (up to 5 sentences)
+Task 2: Trade-off Analysis:
+Which adaptation has the best trade-off between: preserving curational voice, maintaining semantic accuracy, and improving accessibility
+Choose the one with the best overall balance
+Justification (up to 5 sentences)
+Just statistical analysis instead
+Task 3: Audience Specific Recommandations
+For each audience, which of the 4 adaptations do you recommend:
+For young readers:
+Choose the best adaptation
+Justification as to why (up to 5 sentences)
+For international art professionals
+Choose the best adaptation
+Justification as to why (up to 5 sentences)
+For general adult museum visitors
+Choose the best adaptation
+Justification as to why (up to 5 sentences)
+Task 4: Strategy Specific Patterns:
+Output:
+Based on comparing these four adaptations, identify which strategy best fits:
+Lexical Simplification: explanation up to 5 sentences
+Persona 1: explanation up to 5 sentences
+Persona 2: explanation up to 5 sentences 
+Persona 3: explanation up to 5 sentences
+
